@@ -1,0 +1,14 @@
+Requer Node.js 24 ou superior.
+Na pasta deste projeto, execute:
+npm install
+npm run build
+npm run setup-admin
+npm start
+Acesse http://localhost:3000 e mantenha o terminal aberto.
+Não apague a pasta .data: nela ficam as contas, os dados e as versões.
+Faça backups regulares pelo painel administrativo. Para uma cópia completa incluindo usuários, pare o servidor e copie a pasta .data inteira para um local protegido.
+O administrador substitui/restaura versões e cria operadores. Operadores importam e atualizam relatórios. Cada importação exige conferência.
+Selecione a competência antes de importar: apenas esse mês entra na operação. Os demais permanecem no Excel original.
+Somar novas mantém valores de cobranças existentes. Somar e atualizar aplica valores atuais sem dobrar recebimentos. Substituir troca somente o mês e a origem, preservando versões.
+Sem entidade+CNPJ é Empresarial; sem entidade+CPF exige verificação com o cadastro. Cancelados ficam fora dos indicadores.
+Esta instalação é local. Para acesso por outros computadores, é necessário configurar um servidor compartilhado com HTTPS e volume persistente, conforme orientação técnica.

@@ -22,6 +22,9 @@ function iniciarAbas() {
       source,
       composition
     ]],
+    ['coparticipacao', 'Coparticipação', [byId('copaySection')]],
+    ['taxa-associativa', 'Taxa associativa', [byId('associationSection')]],
+    ['outros-valores', 'Outros valores', [byId('otherComponentsSection')]],
     ['entidades', 'Entidades', [
       ranking,
       byId('entitiesSection')
@@ -133,6 +136,9 @@ function iniciarAbas() {
 
   const aliases = {
     categorySection:'visao',
+    copaySection:'coparticipacao',
+    associationSection:'taxa-associativa',
+    otherComponentsSection:'outros-valores',
     entitiesSection:'entidades',
     operatorsSection:'operadoras',
     registrationSection:'pendencias',

@@ -1,0 +1,26 @@
+# Requires a paid web service and persistent disk. No service is created by this file alone.
+services:
+  - type: web
+    name: dashboard-faturamento
+    runtime: node
+    branch: main
+    plan: starter
+    autoDeploy: false
+    buildCommand: npm ci --no-audit --no-fund && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    disk:
+      name: dashboard-data
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: NODE_VERSION
+        value: "24"
+      - key: NODE_ENV
+        value: production
+      - key: DASHBOARD_HOST
+        value: 0.0.0.0
+      - key: DASHBOARD_DATA_DIR
+        value: /var/data/dashboard
+      - key: DASHBOARD_COOKIE_SECURE
+        value: "1"

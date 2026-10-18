@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.data/
+*.sqlite
+*.sqlite-*
+*.db
+*.xlsx
+*.xls
+*.json.gz
+.env
+.env.*
+!.env.example
+*.backup-*
+backup-abas-*/
+backup-atualizacao-admin-*/

@@ -1,6 +1,3 @@
-# Dashboard-Faturamento-
-Dashboard
-
 ## Importação do Excel financeiro
 
 O relatório com a aba **Faturamento** deve ser enviado em **Base principal**.
